@@ -1,2 +1,2 @@
 # saved_io_client
-A client for saved.io
+A client for the bookmarking service saved.io
