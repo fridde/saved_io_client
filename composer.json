@@ -1,0 +1,15 @@
+{
+    "name": "fridde/saved.io_client",
+    "description": "A client to connect to saved.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fridde",
+            "email": "f@hehl.se"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    }
+}
