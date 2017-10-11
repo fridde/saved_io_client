@@ -1,5 +1,7 @@
 <?php
 
+namespace Fridde;
+
 use GuzzleHttp\Client;
 
 class SavedClient {

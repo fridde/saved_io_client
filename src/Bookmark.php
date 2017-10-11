@@ -1,5 +1,7 @@
 <?php
 
+namespace Fridde;
+
 class Bookmark {
 	
 	private $title;	
