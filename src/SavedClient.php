@@ -23,8 +23,12 @@ class SavedClient {
 		$query = $this->keys;
 		$query["title"] = $bookmark->getTitle();
         $query["url"] = $bookmark->getUrl();		        
-        $response = $this->guzzle->request('POST', $this->api_url, ['query' => $query);
-		sleep(0.1);
+        $response = $this->guzzle->request('POST', $this->api_url, ['query' => $query]);
+		if($response->getStatusCode() == '200'){
+            sleep(0.1);
+        } else {
+		    throw new \Exception('Couldn\'t add bookmark. Response returned bad.');
+        }
 	}
 	
 }
